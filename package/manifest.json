@@ -1,0 +1,16 @@
+{
+  "name": "Omnibox ShortCuts",
+  "description" : "To use, type 'v' plus a term into the Omnibox.",
+  "version": "0.0.2",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "options_page": "options.html",
+  "omnibox": { "keyword" : "v" },
+  "manifest_version": 2
+}

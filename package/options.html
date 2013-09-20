@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<title>ShortCuts Options</title>
+<script src="options.js"></script>
+<link rel="stylesheet" type="text/css" href="options.css">
+</head>
+<body>
+<button id="adv" style="float:right;">Advanced</button>
+<table id='rules'></table>
+<button id='new'>New Shortcut</button><br>
+<table hidden>
+<tr id='rule-template' hidden>
+  <td class='nowrap'><button class='move-up'>&uarr;</button>
+    <button class='move-down'>&darr;</button></td>
+  <td>
+    <input type='text' class='match-param'>
+    <select class='action'>
+      <option value='website'>Goto Website</option>
+      <option value='js'>Run Javascript</option>
+    </select>
+    <textarea class='action-js' rows=5 cols=83></textarea></td>
+  <td>  	
+    <input type='text' class='action-website'>
+  </td>
+  <td><span class='nowrap'><input type='checkbox' class='enabled checked'>
+      <label class='enabled-label'>Enabled</label></span>
+    <button class='remove'>Remove</button></td>
+</tr>
+</table>
+</body>
+</html>
